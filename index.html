@@ -1,0 +1,134 @@
+<!--21/Febrero/2025
+Jaqueline Paola Villa Carreon
+Grupo B-L1
+Intruduccion a HTML 5 y CSS3-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 1</title>
+    <style>
+            @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+           @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playwrite+IT+Moderna:wght@100..400&display=swap');
+
+        body{
+            font-family: "Montserrat", serif; 
+            background-color: #EAE4E9; 
+        }
+        header {
+            font-family: "Playwrite IT Moderna", cursive;
+            background-color: #F0A6CA; 
+            color: #372e29;
+            text-align: center;  
+            padding: 10px;
+        }
+        section {
+            text-align: center;
+            padding: 10px;
+            margin: 10px; 
+        }
+        article {
+            background-color: #9C89B8;
+            padding: 15px;
+            text-align: center;
+        }
+</style>   
+<style>  
+        .navbar{
+            position: sticky;
+            top: 0;
+            overflow: hidden;
+            background-color: #F0E6EF;
+        }
+
+        .categorias {
+            
+            background-color: #B8BEDD;   
+            padding: 10px;
+            text-align: center; 
+            margin: 10px;     
+        }  
+
+        #categoria{
+            padding: 10px;
+            background-color: #EFC3E6;
+            text-align: center;
+            margin: 10px;
+        }
+
+</style>         
+    
+</head>
+<body>
+
+<div class="navbar">
+    <section> <!--informacion de la empresa-->
+        <a href="#categoriauno">mujer</a> 
+        <a href="#categoriados">hombre</a> 
+        <a href="#categoriatres">niñas</a> 
+        <a href="#categoriacuatro">niños</a> 
+        <a href="#categoriacinco">zapatos</a> 
+        <a href="#categoriaseis">mascotas</a>
+    </section>
+</div>
+
+    <header>
+        <h1>La fofora</h1> <!--informacion de la empresa-->
+        <h6>656-102-30-07</h6>
+        <h5>Facebook: La fofora (Boutique)</h5> 
+        <h3>Tienda de ropa</h3>
+        <p>Esta es una tienda de ropa un espacio donde la moda se convierte en arte. Nuestra selección de prendas combina elegancia, la calidad, las últimas tendencias y la comodidad, ofreciendo a nuestros compradores unas piezas de ropa únicas para quienes buscan destacar con un estilo refinado. Desde ropa para todo tipo de eventos hasta atuendos para mascotas, aquí encontrarás lo que necesitas para cada momento especial de cualquier integrante de la familia.</p>
+        <img width="560" height="315" src="img/tienda.jpg">
+    </header>
+
+
+    <div class="categorias">
+        <div id="categoria">
+            <h4>mujer</h4>
+            <img width="260" height="215" src="img/blusa .jpeg">
+            <img width="260" height="215" src="img/falda.jpeg">
+            <h5>$250 $300</h5>
+            </div>
+        <div id="categoria">
+            <h4>hombre</h4>
+            <img width="260" height="215" src="img/playera.jpeg">
+            <img width="260" height="215" src="img/pantalon H.jpeg">
+            <h5>$300 $450</h5>
+        </div>
+        <div id="categoria">
+            <h4>niñas</h4>
+            <img width="260" height="215" src="img/blusita.jpeg">
+            <img width="260" height="215" src="img/vestido.jpeg">
+            <h5>$95 $150</h5>
+        </div>
+        <div id="categoria">
+            <h4>niños</h4>
+            <img width="260" height="215" src="img/playerita.jpeg">
+            <img width="260" height="215" src="img\/short.jpeg">
+            <h5>$90 $70</h5>
+        </div>
+        <div id="categoria">
+            <h4>zapatos</h4>
+            <img width="260" height="215" src="img/tenis M.jpeg">
+            <img width="260" height="215" src="img/tenis H.jpeg">
+            <h5>$500 $600</h5>
+        </div>
+        <div id="categoria">
+            <h4>mascotas</h4>
+            <img width="260" height="215" src="img/muñe.jpeg">
+            <img width="260" height="215" src="img/muñeca.jpeg">
+            <h5>$150 $180</h5>
+        </div>
+    </div>
+  </div>
+ 
+    <article> 
+            <h4>Dirección de la tienda</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3394.077164040097!2d-106.4763163251015!3d31.713787074126035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86e75ecf8f64fc73%3A0x40e15eea169a1925!2sC.%20Central%204396-4346%2C%2032250%20Ju%C3%A1rez%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1740696575195!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </article>
+
+
+</body>
+</html>
+
