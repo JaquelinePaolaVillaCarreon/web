@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: "Montserrat", serif; /*para poner la tipografia en toda la pagina*/
+            background-image: url('https://i.pinimg.com/originals/95/e7/aa/95e7aafd4dbc7821b29aea03402a5fc3.jpg'); /*para poner imagen de fondo*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*no usado en clase pero para que la imagen este fija sin importar cuanto se desplace*/
+            margin: 0; 
+            height: 100px; 
+            padding: 0;
+        }
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #9d8189; /*color*/
+            padding: 10px;
+            text-align: center; /*texto aliniado al centro*/
+        }
+        a{
+            color: black; /*asi no se ve el color*/
+            text-decoration: none; /*asi no se la linea*/
+        }
+        header {
+            background-color: #e7c6ff; 
+            color: #372e29;
+            text-align: center;  /*texto al centro*/
+            padding: 20px;
+            margin: 30px; /*margen*/
+            border: 20px inset #c8b6ff;
+        }
+        section {
+            padding: 20px;
+            background: radial-gradient(circle, #f4eea9 10%, #ffccd5 90%);/*para hacer un degradado desde el cetro*/
+            margin: 20px;  /*margen*/
+            text-align: center;
+        }
+        article {
+            border: 20px dotted #f7a072;
+            margin: 20px;
+            text-align: center;
+            padding: 15px;
+        }
+        #bloque {
+            background-color: #fde2e4;
+            padding: 10px;
+            margin: 20px;
+            text-align: center;
+        }
+        .bloques {
+            width: 640px; /*width ancho*/
+            height: 550px; /*height alto*/
+            background-color: #FDE4CF;
+            background: linear-gradient(135deg, #a68ba5 55%, #b3efb2 65%); /*para hacer un degradado de esquina a esquina*/
+            margin: 15px; /*margen para afuera*/
+            text-align: center; 
+            float: left; /*para que esten al lado y no abajo*/
+        }
+
+        
+        .cuadros {
+            width: 415px; /*width ancho*/
+            height: 300px; /*height alto*/
+            background-color: #FDE4CF;
+            background: linear-gradient(90deg, #bde0fe 5%, #fcf6bd 85%); /*para hacer un degradado de lado a lado*/
+            margin: 12px; /*margen para afuera*/
+            text-align: center; 
+            display: grid; /*no usado en clase*/
+            place-items: center; /*no usado en clase*/
+            display: inline-block; /*para que esten al lado y no abajo*/
+            color: #6b9080; /*cambiar el color del icono*/
+        }
+
+        .uno{
+            width: 131px;
+            height: 100px;
+            background-color: #83c5be;
+            position: absolute;
+            z-index: -1;
+            margin: 15px;
+            top: 10;
+        } 
+        .dos{
+            width: 131px;
+            height: 100px;
+            background-color: #e0b1cb;
+            position: absolute;
+            left: 0px; /*manera de acomodar*/
+            z-index: -1;
+            margin: 15px;
+        }
+        .tres{
+            width: 131px;
+            height: 100px;
+            background-color: #fbc4ab;
+            position: absolute;
+            z-index: -1;
+            margin: 15px;
+        }
+
+
+        #temauno {
+            background-color: #c4acae;
+            padding: 15px;
+            margin: 20px;
+            text-align: center;
+            height: 150px;
+            display: grid;
+        }
+
+        #temados{
+            div p:first-child {
+                font-weight: bold; /*Manera de poner el texto en negrito*/
+            }
+            ul li:first-child { /*Este es par remarcar*/
+                background-color: #ffd3f5; 
+            }
+        }
+        .textos{ /*parte del tematres*/
+            background-color: #fdaecf;
+            padding: 15px;
+            margin: 20px;
+            text-align: center;
+            height: 135px;
+        }
+
+        #tematres{
+            background-color: #84e7b6;
+            padding: 15px;
+            margin: 20px;
+            text-align: center;
+            height: 150px;
+            transition: background-color 0.3s; 
+            button { /*Estilo del boton cuando el cursor no esta sobre el*/
+                background-color: #90ee93; 
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                border: none;
+                }
+                /*Estilo del boton cuando el cursor esta sobre el*/
+                button:hover {
+                background-color: #6bb36f; 
+                }
+        }
+
+        #temacuatro{
+            background-color: #f4faa2;
+            padding: 15px;
+            margin: 20px;
+            text-align: center;
+            height: 80px;
+            [data-info*="parcial"] {   /*cambia el color de las letras*/
+                color: rgb(211, 175, 13);
+            }
+    
+            [data-info^="inicio"] {  /*hace que se vean las letras en negrito*/
+                font-weight: bold;
+            }
+    
+            [data-info$="final"] {   /*resalta el renglon con el color indicado abajo*/
+                background-color: rgb(223, 214, 89)
+                ;
+            }
+        }
+
+        #temacinco{
+            background-color: rgb(154, 154, 255);;
+            padding: 15px;
+            margin: 20px;
+            text-align: center;
+            height: 160px;
+            .contenedor p {
+                color: rgb(97, 97, 180); /*Selector de descendiente*/
+                font-size: 16px;
+            }
+            .padre > p {
+                color: rgb(43, 43, 100); /*Selector de hijo directo*/
+                font-weight: bold;
+              }
+        }
+        
+        table {
+            width: 1310px; 
+            height: 250px; 
+            background-color: #fdcfcf;
+            background: linear-gradient(180deg, #92b5d4 5%, #ce88ab 85%); /*para hacer un degradado de ariba a abajo*/
+            margin: 15px; /*margen para afuera*/
+            text-align: center; 
+            display: grid; /*no usado en clase*/
+            place-items: center; /*no usado en clase*/
+            color: #36142b; /*cambiar el color de las letras*/
+        }
+
+        form {
+            background-color: #ffc6e9; 
+            color: #372e29;
+            text-align: center;  /*texto al centro*/
+            padding: 20px;
+            margin: 20px; /*margen*/
+            border: 20px ridge #ff9fe7;
+        }
+
+
+
+
+        /*tema de lunes 7*/
+        .numuno{
+            margin: 20px;
+            width: 1200px;
+            height: 200px;
+            background-color: #d684fc;
+            text-align: center;
+            animation: mover 5s infinite; /*Nombre de la animacion, tiempo, loop*/
+        }
+        @keyframes mover {
+            0% {
+                transform: translateX(0);
+            }
+
+            50% {
+                transform: translateX(100px);
+            }
+
+            100% {
+                transform: translateX(0);
+            }
+        }   /*Esto es para mover ve un lugar a otro*/
+        .numdos{
+            margin: 20px;
+            width: 1200px;
+            height: 200px;
+            background-color: #7e82a5;
+            text-align: center;
+            animation: rotar 5s infinite; /*Nombre de la animacion, tiempo, loop*/
+        }
+        @keyframes rotar {
+                from {
+                    transform: rotate(0deg);
+                }
+
+                to{
+                    transform: rotate(360deg);
+                }
+                } /*parar hacer que las cosas roten*/
+        .numtres{
+            margin: 20px;
+            width: 1200px;
+            height: 100px;
+            background-color: #91a385;
+            text-align: center;
+            animation: escalar 5s infinite; /*Nombre de la animacion, tiempo, loop*/
+        }
+        @keyframes escalar {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(3);
+            }
+
+            100% {
+                transform: scale(1);
+            }  
+        }  
+
+
+
+        #slideshow {
+            text-align: center;
+            overflow: hidden;
+            height: 510px;
+            width: 728px;
+            margin-bottom: 400px;
+          }
+           
+          .slide-wrapper {
+            width: 2912px;
+            animation: slide 18s ease infinite;
+          }
+           
+          .slide {
+            float: left;
+            height: 510px;
+            width: 728px;
+          }
+           
+          .slide:nth-child(1) { /*Elementos de una etiqueta que estan dentro*/
+            background-color: rgb(216, 41, 243);
+          }
+           
+          .slide:nth-child(2) {
+            background-color: coral;
+          }
+           
+          .slide:nth-child(3) {
+            background-color: greenyellow;
+          }
+           
+          .slide:nth-child(4) {
+            background-color: brown;
+          }
+          .slide:nth-child(5) {
+            background-color: blue;
+          }
+          
+           
+          @keyframes slide {
+            20% {margin-left: 0px;}
+            30% {margin-left: -728px;}
+            50% {margin-left: -728px;}
+            60% {margin-left: -1456px;}
+            70% {margin-left: -1456px;}
+            80% {margin-left: -2184px;}
+            90% {margin-left: -2184px;}
+          }
+        footer {
+            border: 20px double #b8b8bb;
+            background-color: #f3e9f3;
+            text-align: center;
+            padding: 10px;
+            height: 150px;
+            width: 100%;
+            margin: 15px;
+            float: left;
+        }
