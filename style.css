@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+        body {
+            font-family: "Montserrat", serif; /*para poner la tipografia en toda la pagina*/
+            background-image: url(img/u13857p_900.webp) ; /*para poner imagen de fondo*/
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed; /*no usado en clase pero para que la imagen este fija sin importar cuanto se desplace*/
+            margin: 0; 
+            height: 100px; 
+            padding: 0;
+            text-align: center;
+        }
+        /*TIENDA*/
+        .navbar {
+            position: sticky;
+            top: 0;
+            background-color: #755D66; /*color*/
+            padding: 10px;
+            text-align: center; /*texto aliniado al centro*/
+            a{
+            color:black;
+            }
+        }
+        header{
+            color: #372e29;
+            padding: 20px;
+            margin-left: 400px; /*margen*/
+            margin-top: 50px;
+            margin-right: 400px;
+            border: 20px dotted #9c868d;
+        }
+        #descripcion{
+            background-color: #be9da7;   /*d4b9bd*/
+            padding: 10px;
+            margin: 50px;
+        }
+        #slideshow {
+            overflow: hidden;
+            height: 510px;
+            width: 728px;
+            margin: 0 auto 0 auto;  /*modificado para hacer que se centren las imagenes*/
+        }
+            .slide-wrapper {
+                width: 2912px;
+                animation: slide 10s ease infinite;
+            }
+            .slide {
+                float: left;
+                height: 510px;
+                width: 728px;
+            } 
+            .slide:nth-child(1) { /*Elementos de una etiqueta que estan dentro*/
+                background-color: purple;
+            }
+            .slide:nth-child(2) {
+                background-color: coral;
+            }
+            .slide:nth-child(3) {
+                background-color: greenyellow;
+            }
+            .slide:nth-child(4) {
+                background-color: brown;
+            }
+            .slide:nth-child(5) {
+                background-color: blue;
+            }
+            @keyframes slide {
+                20% {margin-left: 0px;}
+                30% {margin-left: -728px;}
+                50% {margin-left: -728px;}
+                60% {margin-left: -1456px;}
+                70% {margin-left: -1456px;}
+                80% {margin-left: -2184px;}
+                90% {margin-left: -2184px;}
+               100% {margin-left: -3000px;}
+              }
+        footer {
+                border: 20px double #b8b8bb;
+                background-color: #f3e9f3;
+                padding: 10px;
+                height: 300px;
+                width: 1248px;
+                margin: 15px;
+        }
+
+        /*ACUARELAS*//*PINCELES*//*LAPICES*//*LIENZOS*/
+            .num{
+                margin: 20px;
+                border: 1px solid #B3A3AD; /*sacado de internet*/
+                width: 1200px;
+                height: 150px;
+                background-color: #B3A3AD;
+                text-align: center;
+                animation: mover 5s infinite; /*Nombre de la animacion, tiempo, loop*/
+            }
+            @keyframes mover {
+                0% {
+                    transform: translateX(0);
+                }
+                50% {
+                    transform: translateX(100px);
+                }
+                100% {
+                    transform: translateX(0);
+                }
+            }   /*Esto es para mover ve un lugar a otro*/
+            .cuadros{
+                width: 415px; /*width ancho*/
+                height: 300px; /*height alto*/
+                background-color: #FDE4CF;
+                background: linear-gradient(45deg,#BCC5C9 30%, #DCB2B5 65%); /*para hacer un degradado de lado a lado*/
+                margin: 12px; /*margen para afuera*/
+                text-align: center; 
+                display: grid; /*no usado en clase*/
+                place-items: center; /*no usado en clase*/
+                display: inline-block; /*para que esten al lado y no abajo*/
+                color: #7F3844; /*cambiar el color del icono*/
+            }
+            .cuadrosuno{
+                width: 415px; /*width ancho*/
+                height: 300px; /*height alto*/
+                background: linear-gradient(45deg,#BCC5C9 30%, #DCB2B5 65%); /*para hacer un degradado de lado a lado*/
+                margin: 12px; /*margen para afuera*/
+                text-align: center; 
+                display: grid; /*no usado en clase*/
+                place-items: center; /*no usado en clase*/
+                display: inline-block; /*para que esten al lado y no abajo*/
+                color: #7F3844; /*cambiar el color del icono*/
+            }
+            .cuadrosdos{
+                width: 415px; /*width ancho*/
+                height: 300px; /*height alto*/
+                background: linear-gradient(45deg,#BCC5C9 30%, #DCB2B5 65%); /*para hacer un degradado de lado a lado*/
+                margin: 12px; /*margen para afuera*/
+                text-align: center; 
+                display: grid; /*no usado en clase*/
+                place-items: center; /*no usado en clase*/
+                display: inline-block; /*para que esten al lado y no abajo*/
+                color: #7F3844; /*cambiar el color del icono*/
+            }
